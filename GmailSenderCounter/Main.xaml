@@ -1,0 +1,774 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1458,8241" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="49">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Windows</x:String>
+      <x:String>System.Windows.Media.Animation</x:String>
+      <x:String>System.Windows.Media</x:String>
+      <x:String>System.Windows.Threading</x:String>
+      <x:String>UiPath.Core.Activities.UiTree</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Windows.Controls</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Windows.Controls.Ribbon</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="This is just a test to see how UiPath works. I am intentionally doing this the hard way in order to get more practice. Normally you would simply use one of the included email activities. This does not include all of the various edge case scenarios that &#xD;&#xA;would be required for a full release like what to do when there are additional clicks required for signing in nor does it include error handling.&#xA;" DisplayName="Sequence for Counting Most Common Email Senders" sap:VirtualizedContainerService.HintSize="1468,8176" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="emailIdentifier" />
+      <Variable x:TypeArguments="ss:SecureString" Name="emailIdentifierPW" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="isEmailLoaded" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="senderCounts">
+        <Variable.Default>
+          <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">new Dictionary&lt;string, Int32&gt;();</mca:CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="displayVar" />
+      <Variable x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(x:String, x:Int32))" Name="sortedDictionary" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1426,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">"GmailSenderCounter Automation Started"</mca:CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" sap2010:Annotation.AnnotationText="Open Chrome, starts on YouTube just for url redirect example purposes" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google" sap:VirtualizedContainerService.HintSize="1426,7758" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1392,7510" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl sap2010:Annotation.AnnotationText="For the purposes of this demo, redirect to google.com" DisplayName="Go To google.com" sap:VirtualizedContainerService.HintSize="1350,113" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="google.com" Version="V1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGoToUrl>
+            <uix:NClick sap2010:Annotation.AnnotationText="Open gmail" ClickType="Single" DisplayName="Click 'Gmail'" sap:VirtualizedContainerService.HintSize="1350,188" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/?gws_rd=ssl" DesignTimeRectangle="2303, 177, 42, 30" ElementType="Text" FriendlyName="'Gmail'" FullSelectorArgument="&lt;webctrl parentid='gb' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='gb' tag='A' type='' class='gb_d' aaname='Gmail' check:innerText='Gmail' /&gt;" Guid="fa02f7a3-fb05-4e28-9f1f-054717880a94" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAiCAYAAAAge+tMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVFhH7ZRtDoMgDEB3FW9H4m0MF8F76DVMvETHRyufzohLsyV9CT+ADl5p3Qv+FBHnRsS5EXFuRJwbEefmVHyfFQzDkA0177jLwKrtnRoWP9nBjPn9DfEFtBMdjQ1P2Ayo1joLl+IhYJhCnhUor1ecs3El7sUUmA3nFe4AbffpgFAdvWKVaPjE87UqWargWcydVvF9fasVSC4mG7+Nci15kEblqpg74stkL+wRT1sLpdJLStHmA5XJPBcv2sCNIybsZZK4lpW98cJErFAYXeLNlyjIk+sUx3km++TFQ/Cnj/M74s3KPhLHgNO/Q8tz8VrCQS3TKe4IF8cfEbSeSvWI2wiXfHo+7ruzj7PuiwfKj8aPqhJ94iQSz3btiQ9Dd/SK/zoizo2IcyPi3Ig4NyLOC8AblVL+jo/YaBsAAAAASUVORK5CYII=" InformativeScreenshot="5e2dba9d458863b0daad79bec9e24ffa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NCheckState Exists="{x:Null}" sap2010:Annotation.AnnotationText="Waits for the compose message element to load to check if it is signed in already. If not, goes through the standard sign in process&#xA;" DisplayName="Check to See If Signed In or Not" sap:VirtualizedContainerService.HintSize="1350,2998" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Timeout="10" Version="V1">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Signed In" sap:VirtualizedContainerService.HintSize="376,286" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">"Automation already signed into gmail"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">isEmailLoaded</mca:CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence sap2010:Annotation.AnnotationText="Untested because I didn't want to sign out every time and resign back in. Mostly just here for the logical flow to show what steps would be needed. " DisplayName="Not Signed In" sap:VirtualizedContainerService.HintSize="776,2736" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="734,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87">"Automation attempting to sign into gmail"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="734,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?dsh=S-1140387057%3A1662223543935624&amp;continue=https%3A%2F%2Fwww.google.com%2F&amp;ec=GAlAmgQ&amp;hl=en&amp;flowName=GlifWebSignIn&amp;flowEntry=AddSession" DesignTimeRectangle="1097, 738, 31, 20" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl tag='a' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='a' check:innerText='Sign in' /&gt;" Guid="cd03b13b-ad95-4724-8aff-7e0cda3481b3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH+SURBVEhL7ZRLK0VRFMd9Dh/AFzA18BUkMxMZmEkMxJCSlKREUpSBNyUhrwgDbyKEQgpXV/fc6x73vM+y/+vYh+t2yKPcwVm1Oo+9Hr+91to7J7cmQtmiIUyQhjBBmp0wJV0xuo87ZDtEfevPaUZr5wYldZcqB+Jp//9aM2Ag0aRD5X2Kb/SXMDLPWcTKWMuAUZ4dMiyXVs4M3+jfYM6F0daVSZrpUtN0ktc+whS2PDKsLqAhqlgb39Uor/6BfeB7fGtRQXOUSnsUiiS8TU4f6mTano+Ugc1UMAyIq4cTFE85dBm1OfF7GCRcFd+WTbR4olPtWILWLwxOMvgaGGBYH9vR2BZw7YsqlfUqNLGncWwAjor1qqHE5zB+QDFCI9upNBg4P2ku7V6bDAZbVOBKgEPxjg2c3FncbkABSNp+q03SCAFRGZT34Mb0Ydrm1YxSS4E/4sC/ccprV0z4V/S/zdqPYKCy/47ILWHqxp94RtAiaYddN88kqbjTA5Eb4cqI6qKNv6qMVLQI8n5mNi4NBsSwT+5r/MS3PIHzxzpD4L7CP1Sye8W7u4o6YnQXtznegrDrXFb9XF/C4L7BvSNh8A87R2VSomoQPGePdMpviFLrnMqnDK0FOOLeKjYPLQ4G/AGG6rrCfen0rcI+TDZoCBOkIUyQhjBBmkUwEXoBgXrrX1iciK8AAAAASUVORK5CYII=" InformativeScreenshot="95f8ae6cea2fd464732f36b5fd90b557.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Gmail*' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1073, 730, 79, 36" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl parentid='identifierNext' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='identifierNext' tag='BUTTON' type='button' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 qIypjc TrZEUc lw1w4b' aaname='Next' check:innerText='Next' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAoCAYAAACCV8YCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALUSURBVGhD7ZpNaxNRFIb9HS5d+AfcuvAviLhzU1y4k6ILP5YKUgQRQSoiGHBRv1pBpIq1YtEu/KqftNIKrSitKZFM0qSZyWRmjve945lm7FhMPEmxOQ+8pJN77yTz5Nw7U7jbSBFDZQqSkvn+m099uRLtOL5M24/mNX8I/MATfDWTyESDSmwt8NUsNJEJ01kDNBsH3phEplZle4E3JpGZ1VHzd2FUpkAYlSkQRmUKhFGZAmFUpkAYlSkQRmUKhOmazP2XivS9FFIQEuUmV1Ntz+bqVPEiOjz0f/4XxnRdJihUQjqYc5I2SZn8ObP5RmZ7J8J0XaazGlK9EdHEbD1pU5kthi9yzlzkywWfXD+iM6MV2/a7zD1nf1jZnpEOqqZtZMqlnSeX7RiMnV5s0O6BAh244lC+HP9Iox888oN4DDP0opb6Hp0I03WZqJgjN8tUqoU0XwisuGaZEPbUHDcCovEZj44Nl2nyc91Kuv5LDMSiffi1a/tC7oXxKvVddejOG9eeG4Jvm/b+G+V130U6zKbIxLEVYpbQW69qKZm4+BU3oqkvvhWLvqjABSMewd/4AWaWGna5gFQI5b49Nc35IiEElYnp+e6rn8g8P1ZdN1UZjMd5MP70vXi6F834Q9fW1tqelInw+hcadyzzxMiKXSMxxbkfqm7gfoX2DcYi+YewlWmqG8tAT1cmB1McNK+Zz+frVjBuVnffuvYVx/wEMDbtWYl4XsV7qOTLE/Gz696LRVoqBfZ8j0y/wSfV1Od1Isymy8TzJp47WSbeQ+WhMmumagFeH3z0aNepAp17WLV3eSwNEI/zLjqBvengxobxEIvqjszwx5/WKrxTYbomcyuHUZkCYVSmQBiVKRBGZQqEUZkCYVSmQBiVKRBGZQqEUZkCYRKZunGrvWRu3NIthe0lc0uhbnZtPfCVudkVoAGmVerGgR94ahYJUjKVf0NlikH0E/b7nfzBZHz0AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Get Email/Phone # From User" sap:VirtualizedContainerService.HintSize="734,242" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter your email or phone number used to sign in" Title="Email/Phone Number">
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="x:String">
+                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">emailIdentifier</mca:CSharpReference>
+                      </OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input Email/Phone # Into 'INPUT identifierId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="734,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?dsh=S-1140387057%3A1662223543935624&amp;continue=https%3A%2F%2Fwww.google.com%2F&amp;ec=GAlAmgQ&amp;hl=en&amp;flowName=GlifWebSignIn&amp;flowEntry=AddSession" DesignTimeRectangle="785, 521, 366, 54" ElementType="InputBox" FriendlyName="'INPUT identifierId'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" Guid="ead13c71-9c30-4a4f-a3bf-9a952a2feb56" ImageBase64="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" InformativeScreenshot="a24dcb25477ace8e16f0d1aaa41eb92e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">emailIdentifier</mca:CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                  </uix:NTypeInto>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="734,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?dsh=S-1140387057%3A1662223543935624&amp;continue=https%3A%2F%2Fwww.google.com%2F&amp;ec=GAlAmgQ&amp;hl=en&amp;flowName=GlifWebSignIn&amp;flowEntry=AddSession" DesignTimeRectangle="1097, 738, 31, 20" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl parentid='identifierNext' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='identifierNext' tag='SPAN' type='' aaname='Next' check:innerText='Next' /&gt;" Guid="cd03b13b-ad95-4724-8aff-7e0cda3481b3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH+SURBVEhL7ZRLK0VRFMd9Dh/AFzA18BUkMxMZmEkMxJCSlKREUpSBNyUhrwgDbyKEQgpXV/fc6x73vM+y/+vYh+t2yKPcwVm1Oo+9Hr+91to7J7cmQtmiIUyQhjBBmp0wJV0xuo87ZDtEfevPaUZr5wYldZcqB+Jp//9aM2Ag0aRD5X2Kb/SXMDLPWcTKWMuAUZ4dMiyXVs4M3+jfYM6F0daVSZrpUtN0ktc+whS2PDKsLqAhqlgb39Uor/6BfeB7fGtRQXOUSnsUiiS8TU4f6mTano+Ugc1UMAyIq4cTFE85dBm1OfF7GCRcFd+WTbR4olPtWILWLwxOMvgaGGBYH9vR2BZw7YsqlfUqNLGncWwAjor1qqHE5zB+QDFCI9upNBg4P2ku7V6bDAZbVOBKgEPxjg2c3FncbkABSNp+q03SCAFRGZT34Mb0Ydrm1YxSS4E/4sC/ccprV0z4V/S/zdqPYKCy/47ILWHqxp94RtAiaYddN88kqbjTA5Eb4cqI6qKNv6qMVLQI8n5mNi4NBsSwT+5r/MS3PIHzxzpD4L7CP1Sye8W7u4o6YnQXtznegrDrXFb9XF/C4L7BvSNh8A87R2VSomoQPGePdMpviFLrnMqnDK0FOOLeKjYPLQ4G/AGG6rrCfen0rcI+TDZoCBOkIUyQhjBBmkUwEXoBgXrrX1iciK8AAAAASUVORK5CYII=" InformativeScreenshot="95f8ae6cea2fd464732f36b5fd90b557.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1073, 730, 79, 36" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl parentid='identifierNext' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='identifierNext' tag='BUTTON' type='button' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 qIypjc TrZEUc lw1w4b' aaname='Next' check:innerText='Next' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAoCAYAAACCV8YCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALUSURBVGhD7ZpNaxNRFIb9HS5d+AfcuvAviLhzU1y4k6ILP5YKUgQRQSoiGHBRv1pBpIq1YtEu/KqftNIKrSitKZFM0qSZyWRmjve945lm7FhMPEmxOQ+8pJN77yTz5Nw7U7jbSBFDZQqSkvn+m099uRLtOL5M24/mNX8I/MATfDWTyESDSmwt8NUsNJEJ01kDNBsH3phEplZle4E3JpGZ1VHzd2FUpkAYlSkQRmUKhFGZAmFUpkAYlSkQRmUKhOmazP2XivS9FFIQEuUmV1Ntz+bqVPEiOjz0f/4XxnRdJihUQjqYc5I2SZn8ObP5RmZ7J8J0XaazGlK9EdHEbD1pU5kthi9yzlzkywWfXD+iM6MV2/a7zD1nf1jZnpEOqqZtZMqlnSeX7RiMnV5s0O6BAh244lC+HP9Iox888oN4DDP0opb6Hp0I03WZqJgjN8tUqoU0XwisuGaZEPbUHDcCovEZj44Nl2nyc91Kuv5LDMSiffi1a/tC7oXxKvVddejOG9eeG4Jvm/b+G+V130U6zKbIxLEVYpbQW69qKZm4+BU3oqkvvhWLvqjABSMewd/4AWaWGna5gFQI5b49Nc35IiEElYnp+e6rn8g8P1ZdN1UZjMd5MP70vXi6F834Q9fW1tqelInw+hcadyzzxMiKXSMxxbkfqm7gfoX2DcYi+YewlWmqG8tAT1cmB1McNK+Zz+frVjBuVnffuvYVx/wEMDbtWYl4XsV7qOTLE/Gz696LRVoqBfZ8j0y/wSfV1Od1Isymy8TzJp47WSbeQ+WhMmumagFeH3z0aNepAp17WLV3eSwNEI/zLjqBvengxobxEIvqjszwx5/WKrxTYbomcyuHUZkCYVSmQBiVKRBGZQqEUZkCYVSmQBiVKRBGZQqEUZkCYRKZunGrvWRu3NIthe0lc0uhbnZtPfCVudkVoAGmVerGgR94ahYJUjKVf0NlikH0E/b7nfzBZHz0AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="734,93" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_90">"Automation entered email/phone number"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Get PW From User" sap:VirtualizedContainerService.HintSize="734,242" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please enter your password used to sign in" Title="Password">
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="ss:SecureString">
+                        <mca:CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">emailIdentifierPW</mca:CSharpReference>
+                      </OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input PW Into PW Field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="734,243" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Version="V1">
+                    <uix:NTypeInto.SecureText>
+                      <InArgument x:TypeArguments="ss:SecureString">
+                        <mca:CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">emailIdentifierPW</mca:CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.SecureText>
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=AKqFyY8rn--5xtHm2Ankuc2YLt4RdR0O8P8wxMOtFXaC7sDBqjkuJnbzLjN7um58&amp;checkConnection=youtube%3A290%3A0&amp;checkedDomains=youtube&amp;cid=1&amp;continue=https%3A%2F%2Fwww.google.com%2F&amp;dsh=S-1140387057%3A1662223543935624&amp;flowEntry=AddSession&amp;flowName=GlifWebSignIn&amp;hl=en&amp;pstMsg=1" DesignTimeRectangle="786, 546, 364, 52" ElementType="InputBoxPassword" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" Guid="7482e423-9260-48b7-b818-ca71b387501a" ImageBase64="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" InformativeScreenshot="37b7fa894f2434e860591b6ca22b6b5e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="734,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=AKqFyY8rn--5xtHm2Ankuc2YLt4RdR0O8P8wxMOtFXaC7sDBqjkuJnbzLjN7um58&amp;checkConnection=youtube%3A290%3A0&amp;checkedDomains=youtube&amp;cid=1&amp;continue=https%3A%2F%2Fwww.google.com%2F&amp;dsh=S-1140387057%3A1662223543935624&amp;flowEntry=AddSession&amp;flowName=GlifWebSignIn&amp;hl=en&amp;pstMsg=1" DesignTimeRectangle="1097, 692, 31, 20" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl parentid='passwordNext' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='passwordNext' tag='SPAN' type='' aaname='Next' check:innerText='Next' /&gt;" Guid="07dd0686-974a-44c8-90c3-b8f36c250fbb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH+SURBVEhL7ZRLK0VRFMd9Dh/AFzA18BUkMxMZmEkMxJCSlKREUpSBNyUhrwgDbyKEQgpXV/fc6x73vM+y/+vYh+t2yKPcwVm1Oo+9Hr+91to7J7cmQtmiIUyQhjBBmp0wJV0xuo87ZDtEfevPaUZr5wYldZcqB+Jp//9aM2Ag0aRD5X2Kb/SXMDLPWcTKWMuAUZ4dMiyXVs4M3+jfYM6F0daVSZrpUtN0ktc+whS2PDKsLqAhqlgb39Uor/6BfeB7fGtRQXOUSnsUiiS8TU4f6mTano+Ugc1UMAyIq4cTFE85dBm1OfF7GCRcFd+WTbR4olPtWILWLwxOMvgaGGBYH9vR2BZw7YsqlfUqNLGncWwAjor1qqHE5zB+QDFCI9upNBg4P2ku7V6bDAZbVOBKgEPxjg2c3FncbkABSNp+q03SCAFRGZT34Mb0Ydrm1YxSS4E/4sC/ccprV0z4V/S/zdqPYKCy/47ILWHqxp94RtAiaYddN88kqbjTA5Eb4cqI6qKNv6qMVLQI8n5mNi4NBsSwT+5r/MS3PIHzxzpD4L7CP1Sye8W7u4o6YnQXtznegrDrXFb9XF/C4L7BvSNh8A87R2VSomoQPGePdMpviFLrnMqnDK0FOOLeKjYPLQ4G/AGG6rrCfen0rcI+TDZoCBOkIUyQhjBBmkUwEXoBgXrrX1iciK8AAAAASUVORK5CYII=" InformativeScreenshot="19199fda8d089b92989e9affe0a0043c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1073, 684, 79, 36" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl parentid='passwordNext' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='passwordNext' tag='BUTTON' type='button' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 qIypjc TrZEUc lw1w4b' aaname='Next' check:innerText='Next' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAoCAYAAACCV8YCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALUSURBVGhD7ZpNaxNRFIb9HS5d+AfcuvAviLhzU1y4k6ILP5YKUgQRQSoiGHBRv1pBpIq1YtEu/KqftNIKrSitKZFM0qSZyWRmjve945lm7FhMPEmxOQ+8pJN77yTz5Nw7U7jbSBFDZQqSkvn+m099uRLtOL5M24/mNX8I/MATfDWTyESDSmwt8NUsNJEJ01kDNBsH3phEplZle4E3JpGZ1VHzd2FUpkAYlSkQRmUKhFGZAmFUpkAYlSkQRmUKhOmazP2XivS9FFIQEuUmV1Ntz+bqVPEiOjz0f/4XxnRdJihUQjqYc5I2SZn8ObP5RmZ7J8J0XaazGlK9EdHEbD1pU5kthi9yzlzkywWfXD+iM6MV2/a7zD1nf1jZnpEOqqZtZMqlnSeX7RiMnV5s0O6BAh244lC+HP9Iox888oN4DDP0opb6Hp0I03WZqJgjN8tUqoU0XwisuGaZEPbUHDcCovEZj44Nl2nyc91Kuv5LDMSiffi1a/tC7oXxKvVddejOG9eeG4Jvm/b+G+V130U6zKbIxLEVYpbQW69qKZm4+BU3oqkvvhWLvqjABSMewd/4AWaWGna5gFQI5b49Nc35IiEElYnp+e6rn8g8P1ZdN1UZjMd5MP70vXi6F834Q9fW1tqelInw+hcadyzzxMiKXSMxxbkfqm7gfoX2DcYi+YewlWmqG8tAT1cmB1McNK+Zz+frVjBuVnffuvYVx/wEMDbtWYl4XsV7qOTLE/Gz696LRVoqBfZ8j0y/wSfV1Od1Isymy8TzJp47WSbeQ+WhMmumagFeH3z0aNepAp17WLV3eSwNEI/zLjqBvengxobxEIvqjszwx5/WKrxTYbomcyuHUZkCYVSmQBiVKRBGZQqEUZkCYVSmQBiVKRBGZQqEUZkCYRKZunGrvWRu3NIthe0lc0uhbnZtPfCVudkVoAGmVerGgR94ahYJUjKVf0NlikH0E/b7nfzBZHz0AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="734,93" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_91">"Automation entered password"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <uix:NCheckState Exists="{x:Null}" DisplayName="Make Sure Signed In" sap:VirtualizedContainerService.HintSize="734,505" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="ed5b2245-c81e-4c2c-868c-13a84f2c39d2" Timeout="10" Version="V1">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Signed In" sap:VirtualizedContainerService.HintSize="376,287" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">
+                              <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">isEmailLoaded</mca:CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">"Automation was able to sign into gmail"</mca:CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Not Signed In " sap:VirtualizedContainerService.HintSize="304,155" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_18">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">
+                              <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">isEmailLoaded</mca:CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/?ogbl#inbox" DesignTimeRectangle="16, 200, 142, 56" ElementType="Text" FriendlyName="'Compose'" FullSelectorArgument="&lt;webctrl aaname='Compose' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Compose' aria-role='button' check:innerText='Compose' /&gt;" Guid="a6d9be56-3757-419c-9a12-116c6e5d3b18" ImageBase64="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" InformativeScreenshot="b2b86d2a3c85807f18d05366d6561151.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Gmail' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/?ogbl#inbox" DesignTimeRectangle="16, 200, 142, 56" ElementType="Text" FriendlyName="'Compose'" FullSelectorArgument="&lt;webctrl aaname='Compose' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Compose' aria-role='button' check:innerText='Compose' /&gt;" Guid="a6d9be56-3757-419c-9a12-116c6e5d3b18" ImageBase64="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" InformativeScreenshot="b2b86d2a3c85807f18d05366d6561151.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Gmail' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <If DisplayName="If Properly Signed In" sap:VirtualizedContainerService.HintSize="1350,3998" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">isEmailLoaded==true</mca:CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence sap2010:Annotation.AnnotationText="Grabs every email from the first page of results, loops through and stores the email associated with them" DisplayName="Signed In, Loop Through Emails and Store Into Dictionary" sap:VirtualizedContainerService.HintSize="929,3837" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="emailRows" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:FindChildren DisplayName="Find all children of Table (returns TR)" Filter="&lt;webctrl tag='TR' /&gt;" sap:VirtualizedContainerService.HintSize="887,106" sap2010:WorkflowViewState.IdRef="FindChildren_4" Scope="FIND_DESCENDANTS">
+                    <ui:FindChildren.Children>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                        <mca:CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">emailRows</mca:CSharpReference>
+                      </OutArgument>
+                    </ui:FindChildren.Children>
+                    <ui:FindChildren.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2da64968-e970-493f-a0d3-7596d0798d76" InformativeScreenshot="faef44707f4a22974a519f7c07a1da93" Selector="&lt;html app='chrome.exe' title='*Gmail' /&gt;&lt;webctrl aria-role='grid' tag='TABLE' /&gt;&lt;webctrl tag='Tbody' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:FindChildren.Target>
+                  </ui:FindChildren>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="887,93" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">"Automation has grabbed all emails on first page result"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each Row(Email)" sap:VirtualizedContainerService.HintSize="887,2347" sap2010:WorkflowViewState.IdRef="ForEach`1_3">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="ui:UiElement">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="851,2221" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="emailSenderInfo" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:FindChildren DisplayName="Find Children (Gets Email Sender Information)" Filter="&lt;webctrl class='bA4' /&gt;" sap:VirtualizedContainerService.HintSize="809,86" sap2010:WorkflowViewState.IdRef="FindChildren_7" Scope="FIND_DESCENDANTS">
+                            <ui:FindChildren.Children>
+                              <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                                <mca:CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">emailSenderInfo</mca:CSharpReference>
+                              </OutArgument>
+                            </ui:FindChildren.Children>
+                            <ui:FindChildren.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="8d423ead-2e74-448c-b356-3f572bc6725a">
+                                <ui:Target.Element>
+                                  <InArgument x:TypeArguments="ui:UiElement">
+                                    <mca:CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">item</mca:CSharpValue>
+                                  </InArgument>
+                                </ui:Target.Element>
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:FindChildren.Target>
+                          </ui:FindChildren>
+                          <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each (Get Children Returns Multiple, Not Sure Best Way to Do This)" sap:VirtualizedContainerService.HintSize="809,2003" sap2010:WorkflowViewState.IdRef="ForEach`1_4">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="ui:UiElement">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ui:UiElement" Name="emailUI" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Get InnerHTML to find Email Field and Add to Dictionary" sap:VirtualizedContainerService.HintSize="773,1877" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:Int32" Name="startIndex" />
+                                    <Variable x:TypeArguments="x:Int32" Name="endIndex" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="731,93" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info">
+                                    <ui:LogMessage.Message>
+                                      <InArgument x:TypeArguments="x:Object">
+                                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">"Automation attempting to add email info to dictionary"</mca:CSharpValue>
+                                      </InArgument>
+                                    </ui:LogMessage.Message>
+                                  </ui:LogMessage>
+                                  <Assign sap:VirtualizedContainerService.HintSize="731,61" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">displayVar</mca:CSharpReference>
+                                      </OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <uix:NGetAttribute Attribute="innerhtml" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="731,189" sap2010:WorkflowViewState.IdRef="NGetAttribute_3" Version="V1">
+                                    <uix:NGetAttribute.InUiElement>
+                                      <InArgument x:TypeArguments="ui:UiElement">
+                                        <mca:CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">emailUI</mca:CSharpValue>
+                                      </InArgument>
+                                    </uix:NGetAttribute.InUiElement>
+                                    <uix:NGetAttribute.Result>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_31">displayVar</mca:CSharpReference>
+                                      </OutArgument>
+                                    </uix:NGetAttribute.Result>
+                                  </uix:NGetAttribute>
+                                  <Assign DisplayName="Assign (Find Start Index of Email)" sap:VirtualizedContainerService.HintSize="731,61" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">
+                                        <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">startIndex</mca:CSharpReference>
+                                      </OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">
+                                        <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">displayVar.IndexOf("email=")+7</mca:CSharpValue>
+                                      </InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <Assign DisplayName="Assign (Find End Index of Email)" sap:VirtualizedContainerService.HintSize="731,61" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">
+                                        <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">endIndex</mca:CSharpReference>
+                                      </OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">
+                                        <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">displayVar.IndexOf("\"",startIndex)</mca:CSharpValue>
+                                      </InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <Assign DisplayName="Assign (Gets Final Email Info)" sap:VirtualizedContainerService.HintSize="731,61" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">displayVar</mca:CSharpReference>
+                                      </OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">displayVar.Substring(startIndex,endIndex-startIndex)</mca:CSharpValue>
+                                      </InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <If sap2010:Annotation.AnnotationText="Just making sure that the innerhtml field isnt blank (should have email info)" sap:VirtualizedContainerService.HintSize="731,1019" sap2010:WorkflowViewState.IdRef="If_2">
+                                    <If.Condition>
+                                      <InArgument x:TypeArguments="x:Boolean">
+                                        <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">displayVar!=""</mca:CSharpValue>
+                                      </InArgument>
+                                    </If.Condition>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence DisplayName="Add Email to Dictionary" sap:VirtualizedContainerService.HintSize="695,797" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="x:Int32" Name="value" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="653,61" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">
+                                              <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">value</mca:CSharpReference>
+                                            </OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <If DisplayName="Check Dictionary Values" sap:VirtualizedContainerService.HintSize="653,316" sap2010:WorkflowViewState.IdRef="If_3">
+                                          <If.Condition>
+                                            <InArgument x:TypeArguments="x:Boolean">
+                                              <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">senderCounts.TryGetValue(displayVar, out value)</mca:CSharpValue>
+                                            </InArgument>
+                                          </If.Condition>
+                                          <If.Then>
+                                            <Sequence DisplayName="Email Already Exists in Dictionary" sap:VirtualizedContainerService.HintSize="304,155" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Int32">
+                                                    <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">senderCounts[displayVar]</mca:CSharpReference>
+                                                  </OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Int32">
+                                                    <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">senderCounts[displayVar]+1</mca:CSharpValue>
+                                                  </InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence DisplayName="Email Does Not Exist in Dictionary" sap:VirtualizedContainerService.HintSize="304,153" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Int32">
+                                                    <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">senderCounts[displayVar]</mca:CSharpReference>
+                                                  </OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                        <Sequence DisplayName="Skip Over For Each Once Value is Found" sap:VirtualizedContainerService.HintSize="653,114" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:Break sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                        </Sequence>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="653,93" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info">
+                                          <ui:LogMessage.Message>
+                                            <InArgument x:TypeArguments="x:Object">
+                                              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">"Automation finished adding email info to dictionary"</mca:CSharpValue>
+                                            </InArgument>
+                                          </ui:LogMessage.Message>
+                                        </ui:LogMessage>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
+                            <ui:ForEach.Values>
+                              <InArgument x:TypeArguments="sc:IEnumerable">
+                                <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">emailSenderInfo</mca:CSharpValue>
+                              </InArgument>
+                            </ui:ForEach.Values>
+                          </ui:ForEach>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <ui:ForEach.Values>
+                      <InArgument x:TypeArguments="sc:IEnumerable">
+                        <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">emailRows</mca:CSharpValue>
+                      </InArgument>
+                    </ui:ForEach.Values>
+                  </ui:ForEach>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="887,93" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">"Automation attempting to sort dictionary"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <Assign DisplayName="Assign (Orders Dictionary)" sap:VirtualizedContainerService.HintSize="887,61" sap2010:WorkflowViewState.IdRef="Assign_15">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(x:String, x:Int32))">
+                        <mca:CSharpReference x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(x:String, x:Int32))" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">sortedDictionary</mca:CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(x:String, x:Int32))">
+                        <mca:CSharpValue x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(x:String, x:Int32))" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">senderCounts.OrderByDescending(i =&gt; i.Value)</mca:CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="887,61" sap2010:WorkflowViewState.IdRef="Assign_16">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">displayVar</mca:CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="887,93" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">"Automation creating final display value"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Int32)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="887,279" sap2010:WorkflowViewState.IdRef="ForEach`1_7">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:Int32)">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:Int32)" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Gets Values from Dictionary to Display" sap:VirtualizedContainerService.HintSize="304,153" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_13">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">displayVar</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">displayVar+"KEY: "+item.Key+" VALUE: "+item.Value+", "</mca:CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <ui:ForEach.Values>
+                      <InArgument x:TypeArguments="sc:IEnumerable">
+                        <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">sortedDictionary</mca:CSharpValue>
+                      </InArgument>
+                    </ui:ForEach.Values>
+                  </ui:ForEach>
+                  <Assign sap2010:Annotation.AnnotationText="Removes last &quot;, &quot;" sap:VirtualizedContainerService.HintSize="887,92" sap2010:WorkflowViewState.IdRef="Assign_17">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_41">displayVar</mca:CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">displayVar.Substring(0,displayVar.Length-2)</mca:CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Displays final dictionary values of most common email senders" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="887,129" sap2010:WorkflowViewState.IdRef="MessageBox_1">
+                    <ui:MessageBox.Text>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">displayVar</mca:CSharpValue>
+                      </InArgument>
+                    </ui:MessageBox.Text>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:MessageBox>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Not Signed In" sap:VirtualizedContainerService.HintSize="376,343" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Displays message box" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="MessageBox_4">
+                    <ui:MessageBox.Text>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">"Couldn't Sign Into Email"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:MessageBox.Text>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:MessageBox>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">"Automation could not sign into email"</mca:CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-2569, -9, 2578, 1408" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARHSURBVFhHvZddbBRVFMf7YrAq+OSbD6Kgb0qUUh60xq9VtA8k1EJrH1CsGIM+GLUmBA0kFi0WSMCHLcVCTMO2GmjFCiUFpH60sUjMEtIGLaAWama32w92dt2vOf7PndPd3M7sdmobf8k/M/fec8//zJ07s7NFXrEsawlUnclkmqEBaAxKisLS14yYKo6VafMHyR5A4hYoTh5BbAw6iLnLJc3cQZ7bkKQRSttp5w7mpqBdKKRY0noDE+7HxEuSZ94gVxA5l0n6wiDwYUwIyVyN9I0RMls/p4l33qDwi8+R4VtNxjOlFF7no/G3XyfzcBOlR/6UaB3kNHBYITbuyJU7zNOj12ly+/tkPL2KjKdKCgsxkx++p+bMhIvIuxIYuB0BjmWPn+qi0Atl7mYFFCp/nP45e0qy5IAH3w7nnsBAo8RkMY8cck3uVVMN2yWTDrwaxNYGFfGjpu12vnK3pKxIbRVFD+yj+DdHKd51DOf7KfJatRYztbueyLIkmw68UtqtQEeLjCl4s4Wef0xLyBqrWUuJ8/0S5SQx0EfhDeV0c/+n0pMfeDYrc5zfiYb2konufdNhPr7lZbKmpiQiP5YZlbPCwNPEKizm5a+WPoUVG6ZU9yKarLsna86PXGYiIhELB7zX8/I3S1uRuVpPqZ5blMx9d1FozUqKnzwuowsLvP1cwIC0FelffNkCWImjS4lSKRldWODdzwWMSVuR6r1bKyB9sUpG3Hnyo6hnnb2kXwi8DS4gKW1F6vQirYDM79tkxB03o3xq/VGz4gIS/2sBLecSMstmuoCwtBWOWxDcICPuuBnlU3u/YwXULdA34YVntQJGeh+kZGbum/CKkXEUcG7QsQfUJpzxGH6cNT/etZQeDayljuEeGfVOoC/pKGB0Qn81w9vPLyJtm1uxqxTrKab6jkdoZWCdkq/jFQrHxyVidm7GLarYa2rmG/0xGc0B70ouYAkq0Ub39O3Imk+rpvtdmkjM/ipO4iet7khcM2e1Oe+/icMd6vcAjYN2t82NqEFlX73kKKL8683Ue/28RDm5PH6NNnUGYDipmfNqxBKO5W9S5gxWYTk6tB1y4lqvo4BpVXz7FjVeaKH2yyfoy99O0mfBVnq1ZyuVBCrUeOmhOnrik7+yBXw/pH/XwisJz/vE3gadu2Q8yxdDnQ5zrypp3Uhlu392PPsMvHaKbQ7082f4RTskR/cfP+B21LiaFFJpWyUdCHZKlhzw+BWHW8VWB8uyDAH89aoxaoZo6097aFWbvcSzafOZD2gwMiyzcyD33zjcK3buIGCFWxEMb87Dg8doy3c7aE1nLa1ur1RX6uvYRLWnt6m9MBS5ItE6bI4LfEhsCiMrEZS58wa5eNkLX/lMUEQxJjZA//ljAHP5j+tOnLrfcy/IavA/Yn5xeIJjoSbM1R+1+YBki6H1SOyH+iEDSoj4nPv8iKlEDfYbblaKiv4FoeF/NqqvoEMAAAAASUVORK5CYII=" InformativeScreenshot="f1f75885ac39aad4cdc1ff9e1e6c5d05.png" Selector="&lt;html app='chrome.exe' url='https://www.youtube.com/' /&gt;" Url="https://www.youtube.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1426,93" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">"GmailSenderCounter Automation Ended"</mca:CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>
